@@ -1,0 +1,5 @@
+@include('layouts.header-dashboard')
+@include('layouts.sidebar-dashboard')
+@include('layouts.top-bar-dashboard')
+@yield('container')
+@include('layouts.footer-dashboard')
