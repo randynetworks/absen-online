@@ -15,4 +15,4 @@ Route::get('/administrator', 'AdminController@administrator');
 Route::get('/admin-ormawa', 'AdminController@admin_ormawa');
 
 // report
-// Route::get('/report', 'AdminController@index');
+Route::get('/report-absen', 'AbsenController@report');

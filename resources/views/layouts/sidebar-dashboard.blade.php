@@ -12,11 +12,6 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Administrator
-    </div>
-
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
         <a class="nav-link" href="/dashboard">
@@ -50,26 +45,14 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Input Data
+        Report
     </div>
 
-    <!-- Nav Item - Pages Collapse Menu -->
+    <!-- Nav Item - list report absen account -->
     <li class="nav-item">
-        <a class="nav-link" href="" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-            aria-controls="collapsePages">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span>
-        </a>
-        <div id="collapsePages" class="collapse hide" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Absensi:</h6>
-                <a class="collapse-item" href="/absen">Absen HIMA/UKM</a>
-                <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Other Input:</h6>
-                <a class="collapse-item" href="">Input Proker</a>
-                <a class="collapse-item" href="">Input Berita</a>
-            </div>
-        </div>
+        <a class="nav-link" href="/report-absen">
+            <i class="fas fa-fw fa-users-cog"></i>
+            <span>Manage Report Absen</span></a>
     </li>
 
     <!-- Divider -->
