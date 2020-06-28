@@ -9,6 +9,7 @@ class AbsenController extends Controller
     //
     public function report()
     {
-        return view('admin/report');
+        $data['title'] = "Report Absen";
+        return view('admin/report', $data);
     }
 }

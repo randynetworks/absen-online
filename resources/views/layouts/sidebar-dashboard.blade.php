@@ -2,61 +2,61 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
+    <div class="sidebar-brand d-flex align-items-center justify-content-center">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-smile"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">ABSENSI HIMA/UKM</div>
-    </a>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item">
-        <a class="nav-link" href="/dashboard">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Admin Management
-    </div>
-    <!-- Nav Item - list Administrator account -->
-    <li class="nav-item">
-        <a class="nav-link" href="/administrator">
-            <i class="fas fa-fw fa-user"></i>
-            <span>Manage Administrator</span></a>
-    </li>
-
-    <!-- Nav Item - list admin Ormawa account -->
-    <li class="nav-item">
-        <a class="nav-link" href="/admin-ormawa">
-            <i class="fas fa-fw fa-users-cog"></i>
-            <span>Manage Admin Ormawa</span></a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Report
+        <div class="sidebar-brand-text text-white mx-3">ABSENSI HIMA/UKM</div>
     </div>
 
-    <!-- Nav Item - list report absen account -->
-    <li class="nav-item">
-        <a class="nav-link" href="/report-absen">
-            <i class="fas fa-fw fa-file"></i>
-            <span>Manage Report Absen</span></a>
-    </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider">
 
+    {{-- DINAMIS MENU UNTUK ADMIN DAN ADMINISTRATOR --}}
+
+    <?
+        // role admin
+        // $role = 1; // administrator
+        $role = 2; // admin ormawa
+
+        // MENU
+        $queryMenu = "  SELECT `admin_menu`.`id`, `menu`
+                        FROM `admin_menu` JOIN `admin_access_menu`
+                        ON `admin_menu`.`id` = `admin_access_menu`.`menu_id`
+                        WHERE `admin_access_menu`.`role` = $role
+                        ORDER BY `admin_access_menu`.`menu_id` ASC
+        ";
+
+        $menus = DB::select($queryMenu);
+    ?>
+
+    <? foreach ($menus as $menu) : ?>
+    <div class="sidebar-heading">
+        {{-- LOOPING MENU --}}
+        <?= $menu->menu; ?>
+    </div>
+
+    {{-- sub menu --}}
+    <?
+            $menuId = $menu->id;
+            $querySubMenu = " SELECT *
+                              FROM `admin_sub_menu`
+                              WHERE `menu_id` = $menuId
+                              AND `is_active` = 1
+
+            ";
+            $subMenus = DB::select($querySubMenu)
+        ?>
+    <? foreach ($subMenus as $subMenu) : ?>
+    <li class="nav-item">
+        <a class="nav-link" href="<?= $subMenu->url; ?>">
+            <i class="<?= $subMenu->icon; ?>"></i>
+            <span><?= $subMenu->title; ?></span></a>
+    </li>
+    <? endforeach; ?>
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
+    <? endforeach; ?>
 
     <!-- Nav Item - logout account -->
     <li class="nav-item">

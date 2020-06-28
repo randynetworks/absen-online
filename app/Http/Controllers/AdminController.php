@@ -9,14 +9,14 @@ class AdminController extends Controller
     // default index
     public function administrator()
     {
-        // login dashboard
-        return view('admin/administrator');
+        $data['title'] = "Manage Administrator";
+        return view('admin/administrator', $data);
     }
 
-     // default index
-     public function admin_ormawa()
-     {
-         // login dashboard
-         return view('admin/admin_ormawa');
-     }
+    // default index
+    public function admin_ormawa()
+    {
+        $data['title'] = "Manage Admin";
+        return view('admin/admin_ormawa', $data);
+    }
 }

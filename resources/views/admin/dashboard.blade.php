@@ -17,7 +17,7 @@
                     <p class="card-text">Total Admin :</p>
                     <p class="card-text">Administrator Online :</p>
                     <p class="card-text">Administrator Offline :</p>
-                    <a href="/administrator" type="submit" class="btn btn-success">Manage Administrator</a>
+                    <a href="/superadmin/administrator" type="submit" class="btn btn-success">Manage Administrator</a>
                 </div>
             </div>
             <div class="card-deck rounded m-3 text-white bg-secondary mb-3 shadow" style="width: 18rem;">
@@ -27,14 +27,14 @@
                     <p class="card-text">Total Admin :</p>
                     <p class="card-text">Admin Ormawa Online :</p>
                     <p class="card-text">Admin Ormawa Offline :</p>
-                    <a href="/admin-ormawa" type="submit" class="btn btn-success">Manage Admin</a>
+                    <a href="/superadmin/admin-ormawa" type="submit" class="btn btn-success">Manage Admin</a>
                 </div>
             </div>
             <div class="card-deck rounded m-3 text-white bg-danger mb-3 shadow" style="width: 18rem;">
                 <div class="card-body">
                     <h3 class="text-center">Report Absen Ormawa</h3>
                     <hr style="border-color: white;">
-                    <a href="/report-absen" type="submit" class="btn btn-success">Buat Report</a>
+                    <a href="/superadmin/report-absen" type="submit" class="btn btn-success">Buat Report</a>
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@
 
                                     </div>
 
-                                    <a href="/dashboard" type="button" class="btn btn-primary btn-user btn-block">
+                                    <a href="/superadmin/dashboard" type="button" class="btn btn-primary btn-user btn-block">
                                         Login
                                     </a>
                                 </form>

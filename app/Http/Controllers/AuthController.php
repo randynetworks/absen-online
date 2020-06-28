@@ -9,12 +9,15 @@ class AuthController extends Controller
     //login
     public function login()
     {
-        return view('auth/login');
+        $data['title'] = "Login Admin";
+
+        return view('auth/login', $data);
     }
 
     //register
     public function register()
     {
-        return view('auth/registration');
+        $data['title'] = "Registration Admin";
+        return view('auth/registration', $data);
     }
 }
