@@ -9,6 +9,7 @@ class DashboardController extends Controller
     // default index
     public function index()
     {
-        return view('admin.dashboard');
+        // login dashboard
+        return view('admin/dashboard');
     }
 }

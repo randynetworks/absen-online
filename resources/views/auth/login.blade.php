@@ -7,9 +7,9 @@
     <!-- Outer Row -->
     <div class="row justify-content-center">
         <div class="col-lg-7">
-            <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-deck o-hidden shadow-lg my-5">
                 <div class="card-body p-0">
-                    <!-- Nested Row within Card Body -->
+                    <!-- Ini card login -->
                     <div class="row">
                         <div class="col-lg">
                             <div class="p-5">
@@ -18,25 +18,20 @@
                                 </div>
                                 <form class="user">
                                     <div class="form-group">
+                                        {{-- username --}}
                                         <input value="" type="text" class="form-control form-control-user" id="username" placeholder="Username" name="username">
 
                                     </div>
                                     <div class="form-group">
+                                        {{-- password --}}
                                         <input type="password" class="form-control form-control-user" id="password" placeholder="Password" name="password">
 
                                     </div>
 
-                                    <button href="/Dashboard" type="" class="btn btn-primary btn-user btn-block">
+                                    <a href="/dashboard" type="button" class="btn btn-primary btn-user btn-block">
                                         Login
-                                    </button>
+                                    </a>
                                 </form>
-                                <hr>
-                                <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                </div>
-                                <div class="text-center">
-                                    <a class="small" href="/register">Create an Account!</a>
-                                </div>
                             </div>
                         </div>
                     </div>

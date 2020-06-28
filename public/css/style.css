@@ -1,0 +1,11 @@
+.card-deck {
+    background-color: whitesmoke;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.card-deck:hover {
+    border-radius: 100px;
+    transition: 0.2s;
+
+}
