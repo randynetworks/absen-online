@@ -51,7 +51,7 @@
     <!-- Nav Item - list report absen account -->
     <li class="nav-item">
         <a class="nav-link" href="/report-absen">
-            <i class="fas fa-fw fa-users-cog"></i>
+            <i class="fas fa-fw fa-file"></i>
             <span>Manage Report Absen</span></a>
     </li>
 

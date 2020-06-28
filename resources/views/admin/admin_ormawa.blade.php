@@ -37,7 +37,7 @@
                                     <td class="align-middle">Active Now</td>
                                     <td class="align-middle">Admin since 28 June 2020</td>
                                     <td class="align-middle text-white">
-                                        <a class="btn btn-primary"><i class="far fa-edit"> Edit</i></a> |
+                                        <a class="btn btn-primary" data-toggle="modal" data-target="#adminEdit"><i class="far fa-edit"> Edit</i></a> |
                                         <a class="btn btn-danger"><i class="far fa-trash-alt"> Del</i></a>
                                     </td>
                                 </tr>

@@ -22,7 +22,7 @@
                         <h5 class="card-title">Randynetworks</h5>
                         <h6>Active Now!</h6>
                         <p class="card-text"><small class="text-muted">Admin since 28 June 2020</small></p>
-                        <a class="btn btn-primary text-white"><i class="far fa-edit"> Edit</i></a>
+                        <a class="btn btn-primary text-white" data-toggle="modal" data-target="#adminEdit"><i class="far fa-edit"> Edit</i></a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                                     <td class="align-middle">Active Now</td>
                                     <td class="align-middle">Admin since 28 June 2020</td>
                                     <td class="align-middle text-white">
-                                        <a class="btn btn-primary"><i class="far fa-edit"> Edit</i></a> |
+                                        <a class="btn btn-primary" data-toggle="modal" data-target="#adminEdit"><i class="far fa-edit"> Edit</i></a> |
                                         <a class="btn btn-danger"><i class="far fa-trash-alt"> Del</i></a>
                                     </td>
                                 </tr>
