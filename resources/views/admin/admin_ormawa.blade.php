@@ -8,40 +8,20 @@
 <div id="content">
     <!-- Begin Page Content -->
     <div class="container-fluid">
-
-        <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800">Akun Kamu!</h1>
-        <div class="card shadow mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{url('img/me.jpg')}}" class="p-3 card-img rounded-circle">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <br>
-                        <h5 class="card-title">Randynetworks</h5>
-                        <h6>Active Now!</h6>
-                        <p class="card-text"><small class="text-muted">Admin since 28 June 2020</small></p>
-                        <a class="btn btn-primary text-white"><i class="far fa-edit"> Edit</i></a>
-                    </div>
-                </div>
-            </div>
-        </div><br>
-
         <!-- Page manage -->
-        <h1 class="h3 mb-4 text-gray-800">Manage Administrator Absen Online</h1>
+        <h1 class="h3 mb-4 text-gray-800">Manage Admin Ormawa Absen Online</h1>
 
         <!-- data table -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Data Table Administrator per tanggal <?= date('d F Y') ?> </h6>
+                <h6 class="m-0 font-weight-bold text-primary">Data Table Admin Ormawa per tanggal <?= date('d F Y') ?> </h6>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>No.</th>
+                                <th>No</th>
                                 <th>Username</th>
                                 <th>Image</th>
                                 <th>Is Active</th>
@@ -66,7 +46,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <!-- /.container-fluid -->
 
@@ -74,3 +53,4 @@
 <!-- End of Main Content -->
 
 @endsection
+

@@ -40,7 +40,7 @@
 
     <!-- Nav Item - list admin Ormawa account -->
     <li class="nav-item">
-        <a class="nav-link" href="/admin_ormawa">
+        <a class="nav-link" href="/admin-ormawa">
             <i class="fas fa-fw fa-users-cog"></i>
             <span>Manage Admin Ormawa</span></a>
     </li>
