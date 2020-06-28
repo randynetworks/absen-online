@@ -34,7 +34,7 @@
                 <div class="card-body">
                     <h3 class="text-center">Report Absen Ormawa</h3>
                     <hr style="border-color: white;">
-                    <a href="/report" type="submit" class="btn btn-success">Buat Report</a>
+                    <a href="/report-absen" type="submit" class="btn btn-success">Buat Report</a>
                 </div>
             </div>
         </div>
