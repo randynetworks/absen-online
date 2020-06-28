@@ -19,53 +19,109 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
+{{-- modal Add Admin --}}
+
+<!-- The Modal -->
+<div class="modal fade" id="adminAdd">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Add data</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="admin">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Input Nama">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Input Password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Admin Code</label>
+                        <input type="text" class="form-control" id="date" name="date" placeholder="Input Admin Code">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Ormawa</label>
+                        <input type="text" class="form-control" id="date" name="date" placeholder="Input Ormawa">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Role</label>
+                        <input type="text" class="form-control" id="date" name="date" placeholder="Input Role">
+                        <small>1 For Administrator</small>
+                        <small>2 For Admin Ormawa</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="img">Image Profile</label>
+                        <input type="file" class="form-control-file" id="img">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <a type="button" class="text-white btn btn-primary">Save</a>
+                    <a type="button" class="text-white btn btn-danger" data-dismiss="modal">Close</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 {{-- modal Edit Admin --}}
 
-  <!-- The Modal -->
-  <div class="modal fade" id="adminEdit">
+<!-- The Modal -->
+<div class="modal fade" id="adminEdit">
     <div class="modal-dialog">
-      <div class="modal-content">
+        <div class="modal-content">
 
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Edit data randynetworks</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Edit data randynetworks</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="admin">ID</label>
+                        <input type="text" class="form-control" id="username" name="username" value="0001" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" value="randynetworks">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Admin Code</label>
+                        <input type="text" class="form-control" id="date" name="date" value="MA01">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Ormawa</label>
+                        <input type="text" class="form-control" id="date" name="date" value="HMISI">
+                    </div>
+                    <div class="form-group">
+                        <label for="img">Image Profile</label>
+                        <input type="file" class="form-control-file" id="img">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <a type="button" class="text-white btn btn-primary">Save</a>
+                    <a type="button" class="text-white btn btn-danger" data-dismiss="modal">Close</a>
+                </form>
+            </div>
+
         </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-            <form>
-                <div class="form-group">
-                    <label for="admin">ID</label>
-                    <input type="text" class="form-control"  id="username" name="username" value="0001" readonly>
-                  </div>
-
-                <div class="form-group">
-                  <label for="admin">Username</label>
-                  <input type="text" class="form-control"  id="username" name="username" value="randynetworks">
-                </div>
-                <div class="form-group">
-                  <label for="date">Admin Code</label>
-                  <input type="text" class="form-control"  id="date" name="date" value="MA01">
-                </div>
-                <div class="form-group">
-                    <label for="date">Ormawa</label>
-                    <input type="text" class="form-control"  id="date" name="date" value="HMISI">
-                  </div>
-                <div class="form-group">
-                    <label for="img">Image Profile</label>
-                    <input type="file" class="form-control-file" id="img">
-                  </div>
-
-                <!-- Modal footer -->
-                <a type="button" class="text-white btn btn-primary">Save</a>
-                <a type="button" class="text-white btn btn-danger" data-dismiss="modal">Close</a>
-            </form>
-        </div>
-
-      </div>
     </div>
-  </div>
+</div>
+
 
 <!-- Logout Modal-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

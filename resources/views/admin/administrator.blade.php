@@ -30,6 +30,8 @@
 
         <!-- Page manage -->
         <h1 class="h3 mb-4 text-gray-800">Manage Administrator Absen Online</h1>
+        <a class="btn btn-success mb-3 text-white" data-toggle="modal" data-target="#adminAdd">Add New Administrator</a>
+
 
         <!-- data table -->
         <div class="card shadow mb-4">

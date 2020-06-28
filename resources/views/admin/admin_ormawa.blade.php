@@ -10,6 +10,8 @@
     <div class="container-fluid">
         <!-- Page manage -->
         <h1 class="h3 mb-4 text-gray-800">Manage Admin Ormawa Absen Online</h1>
+        <a class="btn btn-success mb-3 text-white" data-toggle="modal" data-target="#adminAdd">Add New Admin Ormawa</a>
+
 
         <!-- data table -->
         <div class="card shadow mb-4">
