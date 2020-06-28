@@ -16,9 +16,9 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Login Admin HIMA/UKM</h1>
                                 </div>
-                                <form class="user" method="POST" action="">
+                                <form class="user">
                                     <div class="form-group">
-                                        <input value="" type="text" class="form-control form-control-user" id="email" placeholder="Enter Email Address..." name="email">
+                                        <input value="" type="text" class="form-control form-control-user" id="username" placeholder="Username" name="username">
 
                                     </div>
                                     <div class="form-group">
@@ -26,7 +26,7 @@
 
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                    <button href="/Dashboard" type="" class="btn btn-primary btn-user btn-block">
                                         Login
                                     </button>
                                 </form>
