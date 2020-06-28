@@ -19,6 +19,8 @@
 
     <!-- Custom styles for this template-->
     <link href="{{url('css/sb-admin-2.min.css')}}" rel="stylesheet">
+    {{-- <link href="{{url('css/style.css')}}" rel="stylesheet"> --}}
+
     <link rel="icon" href="{{url('img/hmisi.png')}}">
 </head>
 

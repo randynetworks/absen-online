@@ -1,8 +1,8 @@
 <!-- Footer -->
-<footer class="sticky-footer fixed-bottom bg-white">
-    <div class="container my-auto">
+<footer class="bg-white">
+    <div class="container my-auto p-3">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; 2020 HIMPUNAN MAHASISWA MANAJEMEN INFORMATIKA DAN SISTEM INFORMASI</span>
         </div>
     </div>
 </footer>
