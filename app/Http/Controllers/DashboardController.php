@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    // default index
-    public function index()
+    public function dasboard_administrator()
     {
         // login dashboard
         $data['title'] = "Dashboard Administrator";

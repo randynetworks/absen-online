@@ -13,7 +13,7 @@
         <a class="btn btn-success mb-3 text-white" data-toggle="modal" data-target="#subMenuAdd">Add New Sub Menu</a>
 
         <!-- data table -->
-        <div class="card shadow mb-4 col-xl-12">
+        <div class="card shadow mb-4 col-lg">
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Data Table Sub Menu per tanggal <?= date('d F Y') ?> </h6>
             </div>
@@ -27,7 +27,7 @@
                                 <th class="align-middle">Title</th>
                                 <th class="align-middle">URL</th>
                                 <th class="align-middle">Icon</th>
-                                <th class="align-middle">Is Active</th>
+                                <th class="align-middle">Active</th>
                                 <th class="align-middle">Action</th>
                             </tr>
                         </thead>
