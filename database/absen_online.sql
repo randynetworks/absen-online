@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 28, 2020 at 10:58 AM
+-- Generation Time: Jun 29, 2020 at 06:21 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -43,7 +43,8 @@ INSERT INTO `admin_access_menu` (`id`, `role`, `menu_id`) VALUES
 (3, 1, 3),
 (4, 2, 8),
 (5, 2, 9),
-(6, 2, 10);
+(6, 2, 10),
+(7, 1, 11);
 
 -- --------------------------------------------------------
 
@@ -66,7 +67,8 @@ INSERT INTO `admin_menu` (`id`, `menu`) VALUES
 (3, 'Report'),
 (8, 'Dashboard Admin'),
 (9, 'Member Management'),
-(10, 'Absent Management');
+(10, 'Absent Management'),
+(11, 'menu');
 
 -- --------------------------------------------------------
 
@@ -96,7 +98,9 @@ INSERT INTO `admin_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_activ
 (6, 9, 'Admin Profile', '/admin/profile', 'fas fa-fw fa-user', 1),
 (7, 9, 'Data Member', '/admin/member', 'fas fa-users', 1),
 (8, 10, 'Input Absent', '/admin/absent-input', 'fas fa-hand-paper', 1),
-(9, 10, 'Recent Absent', '/admin/recent-absent', 'fas fa-history', 1);
+(9, 10, 'Recent Absent', '/admin/recent-absent', 'fas fa-history', 1),
+(10, 11, 'Menu Management', '/superadmin/menu', 'fas fa-fw fa-folder', 1),
+(11, 11, 'Sub Menu Management', '/superadmin/sub-menu', 'fas fa-folder-open', 1);
 
 --
 -- Indexes for dumped tables
@@ -128,19 +132,19 @@ ALTER TABLE `admin_sub_menu`
 -- AUTO_INCREMENT for table `admin_access_menu`
 --
 ALTER TABLE `admin_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `admin_menu`
 --
 ALTER TABLE `admin_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `admin_sub_menu`
 --
 ALTER TABLE `admin_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
