@@ -16,8 +16,8 @@
 
     <?
         // role admin
-        // $role = 1; // administrator
-        $role = 2; // admin ormawa
+        $role = 1; // administrator
+        // $role = 2; // admin ormawa
 
         // MENU
         $queryMenu = "  SELECT `admin_menu`.`id`, `menu`
