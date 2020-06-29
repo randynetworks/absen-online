@@ -16,8 +16,8 @@
 
     <?
         // role admin
-        // $role = 1; // administrator
-        $role = 2; // admin ormawa
+        $role = 1; // administrator
+        // $role = 2; // admin ormawa
 
         // MENU
         $queryMenu = "  SELECT `admin_menu`.`id`, `menu`
@@ -48,7 +48,11 @@
             $subMenus = DB::select($querySubMenu)
         ?>
     <? foreach ($subMenus as $subMenu) : ?>
-    <li class="nav-item">
+    <? if ($title == $subMenu->title) : ?>
+        <li class="nav-item active">
+    <? else : ?>
+        <li class="nav-item">
+    <? endif; ?>
         <a class="nav-link" href="<?= $subMenu->url; ?>">
             <i class="<?= $subMenu->icon; ?>"></i>
             <span><?= $subMenu->title; ?></span></a>

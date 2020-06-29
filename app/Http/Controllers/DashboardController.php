@@ -10,7 +10,7 @@ class DashboardController extends Controller
     public function index()
     {
         // login dashboard
-        $data['title'] = "Dashboard";
-        return view('admin/dashboard', $data);
+        $data['title'] = "Dashboard Administrator";
+        return view('administrator/dashboard', $data);
     }
 }
