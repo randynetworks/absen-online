@@ -15,7 +15,10 @@ Route::get('/superadmin/administrator', 'AdminController@administrator');
 Route::get('/superadmin/admin-ormawa', 'AdminController@admin_ormawa');
 
 // menu management
+// main menu
 Route::get('/superadmin/menu', 'MenuController@index');
 
+// main sub menu
+Route::get('/superadmin/sub-menu', 'MenuController@sub_menu');
 // report
 Route::get('/superadmin/report-absen', 'AbsenController@report');

@@ -187,6 +187,116 @@
     </div>
 </div>
 
+{{-- modal Edit menu --}}
+
+<!-- The Modal -->
+<div class="modal fade" id="subMenuEdit">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Edit data Sub Menu Menu Management</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="admin">ID</label>
+                        <input type="text" class="form-control" id="username" name="username" value="1" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Menu ID</label>
+                        <input type="text" class="form-control" id="username" name="username" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Title</label>
+                        <input type="text" class="form-control" id="username" name="username" value="Dashboard Administrator">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">URL</label>
+                        <input type="text" class="form-control" id="username" name="username" value="/superadmin/dashboard">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Icon</label>
+                        <input type="text" class="form-control" id="username" name="username" value="fas fa-fw fa-tachometer-alt">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Is Active</label>
+                        <input type="text" class="form-control" id="username" name="username" value="1">
+                    </div>
+                    <!-- Modal footer -->
+                    <a type="button" class="text-white btn btn-primary">Save</a>
+                    <a type="button" class="text-white btn btn-danger" data-dismiss="modal">Close</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{-- modal Add Sub Menu --}}
+
+<!-- The Modal -->
+<div class="modal fade" id="subMenuAdd">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Add Menu</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="admin">ID</label>
+                        <input type="text" class="form-control" id="username" name="username" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Menu ID</label>
+                        <input type="text" class="form-control" id="username" name="username" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Title</label>
+                        <input type="text" class="form-control" id="username" name="username" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">URL</label>
+                        <input type="text" class="form-control" id="username" name="username" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Icon</label>
+                        <input type="text" class="form-control" id="username" name="username" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Is Active</label>
+                        <input type="text" class="form-control" id="username" name="username" >
+                    </div>
+                    <!-- Modal footer -->
+                    <a type="button" class="text-white btn btn-primary">Save</a>
+                    <a type="button" class="text-white btn btn-danger" data-dismiss="modal">Close</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 <!-- Logout Modal-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
