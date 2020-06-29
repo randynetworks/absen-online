@@ -36,7 +36,7 @@ Route::get('/superadmin/report-absen', 'AbsenController@report');
 Route::get('/admin/dashboard', 'DashboardController@dasboard_admin');
 
 // admin profile
-Route::get('/admin/profile', 'AdminController@profile_admin');
+Route::get('/admin/profile', 'AdminController@admin_profile');
 
 // data member
 Route::get('/admin/member', 'AbsenController@member');

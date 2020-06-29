@@ -74,7 +74,7 @@
     </div>
 </div>
 
-{{-- modal Edit Admin --}}
+{{-- modal Edit Administrator --}}
 
 <!-- The Modal -->
 <div class="modal fade" id="adminEdit">
@@ -106,6 +106,46 @@
                     <div class="form-group">
                         <label for="date">Ormawa</label>
                         <input type="text" class="form-control" id="date" name="date" value="HMISI">
+                    </div>
+                    <div class="form-group">
+                        <label for="img">Image Profile</label>
+                        <input type="file" class="form-control-file" id="img">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <a type="button" class="text-white btn btn-primary">Save</a>
+                    <a type="button" class="text-white btn btn-danger" data-dismiss="modal">Close</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{-- modal Edit Admin Ormawa --}}
+
+<!-- The Modal -->
+<div class="modal fade" id="adminOrmawaEdit">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Edit data randynetworks</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="admin">ID</label>
+                        <input type="text" class="form-control" id="username" name="username" value="0001" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" value="randynetworks">
                     </div>
                     <div class="form-group">
                         <label for="img">Image Profile</label>
@@ -317,6 +357,89 @@
         </div>
     </div>
 </div>
+
+{{-- modal add member --}}
+
+<!-- The Modal -->
+<div class="modal fade" id="memberAdd">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Add New Member</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="admin">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Masukan Nama Member">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Kelas</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Masukan Kelas">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Jabatan</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Masukan Jabatan">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <a type="button" class="text-white btn btn-primary">Save</a>
+                    <a type="button" class="text-white btn btn-danger" data-dismiss="modal">Close</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{-- modal edit member --}}
+
+<!-- The Modal -->
+<div class="modal fade" id="editMember">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Member Randy Ramadhan</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="admin">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="username" name="username" value="Randy Ramadhan">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Kelas</label>
+                        <input type="text" class="form-control" id="username" name="username" value="MSI-R42/18">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="admin">Jabatan</label>
+                        <input type="text" class="form-control" id="username" name="username" value="Anggota">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <a type="button" class="text-white btn btn-primary">Save</a>
+                    <a type="button" class="text-white btn btn-danger" data-dismiss="modal">Close</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 <!-- Bootstrap core JavaScript-->
 <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
