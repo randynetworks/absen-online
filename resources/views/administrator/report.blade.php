@@ -23,9 +23,9 @@
                       <option>Kakashi</option>
                     </select>
                 </div>
-                <div class="form-group">
-                  <label for="date">Tanggal Rapat</label>
-                  <input type="text" class="form-control"  id="date" name="date" placeholder="Tanggal">
+                <div class='form-group'>
+                    <label for="datetimepicker4">Pick date</label>
+                    <input type='text' class="form-control" id='datetimepicker4' />
                 </div>
 
                 <button type="submit" class="btn btn-primary">Buat Report</button>

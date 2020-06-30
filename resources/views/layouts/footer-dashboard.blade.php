@@ -451,24 +451,18 @@
 <!-- Custom scripts for all pages-->
 <script src="{{url('js/sb-admin-2.min.js')}}"></script>
 
-{{-- Jquery --}}
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
+<script src="{{url('datepicker/dist/js/bootstrap-datepicker.js')}}"></script>
 
-<script>
-    $(document).ready(function () {
-        var date_input = $('input[name="date"]'); //our date input has the name "date"
-        var container = $('.card-deck form').length > 0 ? $('.card-deck form').parent() : "container-fluid";
-        var options = {
-            format: 'mm/dd/yyyy',
-            container: container,
+<script type="text/javascript">
+    $(function () {
+        $("#datetimepicker4").datepicker({
+            format: 'dd-mm-yyyy',
+            autoclose:true,
             todayHighlight: true,
-            autoclose: true,
-        };
-        date_input.datepicker(options);
-    })
-
+        });
+    });
 </script>
+
 
 </body>
 

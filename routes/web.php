@@ -47,5 +47,8 @@ Route::get('/admin/absent-input', 'AbsenController@input_absent');
 // recent absen
 Route::get('/admin/recent-absent', 'AbsenController@recent_absen');
 
+// detail absen
+Route::get('/detail-absent', 'AbsenController@detail_absen');
+
 
 // =================   end of admin ormawa  ===========================
