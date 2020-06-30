@@ -108,8 +108,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-
-                            <a class="btn btn-primary text-white"><i class="fas fa-book"> Buat Report</i></a>
                         </div>
                     </div>
                 </div>
