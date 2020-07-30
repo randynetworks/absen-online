@@ -4,11 +4,12 @@ use Illuminate\Support\Facades\Route;
 
 // route login
 Route::get('/', 'AuthController@Login');
+Route::post('/', 'AuthController@login_access')->name('login_access');
 
 // ====================== administrator ==================================
 
 // dashboard admin
-Route::get('/superadmin/dashboard', 'DashboardController@dasboard_administrator');
+Route::get('/superadmin/dashboard', 'DashboardController@dasboard_administrator')->name('dashboard_administrator');
 
 // menu administrator
 Route::get('/superadmin/administrator', 'AdminController@administrator');
@@ -35,7 +36,7 @@ Route::get('/superadmin/report-absen', 'AbsenController@report');
 // ==================      admin ormawa     ===========================
 
 // dashboard admin ormawa
-Route::get('/admin/dashboard', 'DashboardController@dasboard_admin');
+Route::get('/admin/dashboard', 'DashboardController@dasboard_admin')->name('dashboard_admin');
 
 // admin profile
 Route::get('/admin/profile', 'AdminController@admin_profile');

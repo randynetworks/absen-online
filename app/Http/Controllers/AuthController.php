@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -19,5 +21,13 @@ class AuthController extends Controller
     {
         $data['title'] = "Registration Admin";
         return view('auth/registration', $data);
+    }
+
+    public function login_access(Request $request)
+    {
+        if (!Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
+            return redirect()->back();
+        };
+
     }
 }

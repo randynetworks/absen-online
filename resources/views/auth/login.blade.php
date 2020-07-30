@@ -16,7 +16,8 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Login Admin HIMA/UKM</h1>
                                 </div>
-                                <form class="user">
+                                <form class="user" method="POST" action="{{route('login_access')}}">
+                                    @csrf
                                     <div class="form-group">
                                         {{-- username --}}
                                         <input value="" type="text" class="form-control form-control-user" id="username" placeholder="Username" name="username">
@@ -28,9 +29,9 @@
 
                                     </div>
 
-                                    <a href="/superadmin/dashboard" type="button" class="btn btn-primary btn-user btn-block">
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
                                         Login
-                                    </a>
+                                    </button>
                                 </form>
                             </div>
                         </div>
