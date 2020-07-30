@@ -15,6 +15,8 @@ Route::get('/superadmin/administrator', 'AdminController@administrator');
 
 // menu admin ormawa
 Route::get('/superadmin/admin-ormawa', 'AdminController@admin_ormawa');
+Route::post('/superadmin/admin-ormawa', 'AdminController@add_admin')->name('register');
+
 
 // menu management
 // main menu

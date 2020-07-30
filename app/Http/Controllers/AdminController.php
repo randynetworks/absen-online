@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -25,5 +27,29 @@ class AdminController extends Controller
     {
         $data['title'] = "Admin Profile";
         return view('admin/admin_profile', $data);
+    }
+
+    // admin ormawa
+    public function add_admin(Request $request)
+    {
+
+        $this->validate($request, [
+            'username' => 'required',
+            'password' => 'required|min:6',
+            'admin_code' => 'required',
+            'ormawa' => 'required',
+            'role' => 'required'
+        ]);
+
+        User::create([
+            'username' => $request->username,
+            'password' => Hash::make($request->password),
+            'admin_code' => $request->admin_code,
+            'ormawa' => $request->ormawa,
+            'role' => $request->role
+
+        ]);
+
+        return redirect('/superadmin/admin-ormawa');
     }
 }
